@@ -1,0 +1,122 @@
+[
+  {
+    "asset": "gravel_floor",
+    "map": "diffuse",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/gravel_floor/gravel_floor_diff_1k.jpg",
+    "path": "public/assets/realism/surfaces/gravel_floor_diffuse.jpg",
+    "bytes": 1327302,
+    "md5": "4f055e1545dcf41f347600fbb01d9ac2"
+  },
+  {
+    "asset": "gravel_floor",
+    "map": "nor_gl",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/gravel_floor/gravel_floor_nor_gl_1k.jpg",
+    "path": "public/assets/realism/surfaces/gravel_floor_nor_gl.jpg",
+    "bytes": 1538430,
+    "md5": "2377939c71250cf32f8b842bc4f3fe82"
+  },
+  {
+    "asset": "gravel_floor",
+    "map": "rough",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/gravel_floor/gravel_floor_rough_1k.jpg",
+    "path": "public/assets/realism/surfaces/gravel_floor_rough.jpg",
+    "bytes": 697340,
+    "md5": "06a97bcb5cfaaa17456282237f9446eb"
+  },
+  {
+    "asset": "mossy_rock",
+    "map": "diffuse",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_diff_1k.jpg",
+    "path": "public/assets/realism/surfaces/mossy_rock_diffuse.jpg",
+    "bytes": 1124438,
+    "md5": "a57fbbf55269eb64f8d40708fe3af26c"
+  },
+  {
+    "asset": "mossy_rock",
+    "map": "nor_gl",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_nor_gl_1k.jpg",
+    "path": "public/assets/realism/surfaces/mossy_rock_nor_gl.jpg",
+    "bytes": 995727,
+    "md5": "59370f9b3d068271c2bccfb414dc325b"
+  },
+  {
+    "asset": "mossy_rock",
+    "map": "rough",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_rough_1k.jpg",
+    "path": "public/assets/realism/surfaces/mossy_rock_rough.jpg",
+    "bytes": 780918,
+    "md5": "7eadb38815ad2569104d827ad8ac1572"
+  },
+  {
+    "asset": "wood_planks",
+    "map": "diffuse",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks/wood_planks_diff_1k.jpg",
+    "path": "public/assets/realism/surfaces/wood_planks_diffuse.jpg",
+    "bytes": 609525,
+    "md5": "922505c35c2d0dc6a44da7ac77757134"
+  },
+  {
+    "asset": "wood_planks",
+    "map": "nor_gl",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks/wood_planks_nor_gl_1k.jpg",
+    "path": "public/assets/realism/surfaces/wood_planks_nor_gl.jpg",
+    "bytes": 652441,
+    "md5": "98d2313130880f8ed7b87e843f6ba149"
+  },
+  {
+    "asset": "wood_planks",
+    "map": "rough",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks/wood_planks_rough_1k.jpg",
+    "path": "public/assets/realism/surfaces/wood_planks_rough.jpg",
+    "bytes": 299757,
+    "md5": "69c9313315808cc9d858a648c2335fec"
+  },
+  {
+    "asset": "white_plaster_02",
+    "map": "diffuse",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_diff_1k.jpg",
+    "path": "public/assets/realism/surfaces/white_plaster_02_diffuse.jpg",
+    "bytes": 527219,
+    "md5": "7b10c2686bcfd76d1f309a20fd06b57e"
+  },
+  {
+    "asset": "white_plaster_02",
+    "map": "rough",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_rough_1k.jpg",
+    "path": "public/assets/realism/surfaces/white_plaster_02_rough.jpg",
+    "bytes": 295900,
+    "md5": "8b28f263360b8c4ddbdc4f7c650c4eeb"
+  },
+  {
+    "asset": "white_plaster_02",
+    "map": "nor_gl",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_nor_gl_1k.jpg",
+    "path": "public/assets/realism/surfaces/white_plaster_02_nor_gl.jpg",
+    "bytes": 652310,
+    "md5": "55fc03203ebf1dc703a380fde93ff502"
+  },
+  {
+    "asset": "brown_mud_leaves_01",
+    "map": "diffuse",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_leaves_01/brown_mud_leaves_01_diff_1k.jpg",
+    "path": "public/assets/realism/surfaces/brown_mud_leaves_01_diffuse.jpg",
+    "bytes": 1206953,
+    "md5": "5340848384f9bb19bfa6e7ac459683d7"
+  },
+  {
+    "asset": "brown_mud_leaves_01",
+    "map": "nor_gl",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_1k.jpg",
+    "path": "public/assets/realism/surfaces/brown_mud_leaves_01_nor_gl.jpg",
+    "bytes": 1486072,
+    "md5": "3698df51ef8262ddf2248ffca1e73196"
+  },
+  {
+    "asset": "brown_mud_leaves_01",
+    "map": "rough",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_leaves_01/brown_mud_leaves_01_rough_1k.jpg",
+    "path": "public/assets/realism/surfaces/brown_mud_leaves_01_rough.jpg",
+    "bytes": 644332,
+    "md5": "3896f151d1b1de421a61c3c5d9a742b0"
+  }
+]

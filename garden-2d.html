@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#354f41"><title>庭间 · 一方花境 · 二维</title></head>
+<body>
+  <header class="flat-header">
+    <a class="flat-brand" href="./" aria-label="庭间首页"><i data-lucide="sprout"></i><span>庭间</span></a>
+    <div class="flat-title">一方花境 <span>二维花园</span></div>
+    <div class="flat-actions">
+      <a class="compare-link" href="./?study=realism&layout=corner">对比 3D <i data-lucide="arrow-up-right"></i></a>
+      <button id="undo" class="icon-button" aria-label="撤销" title="撤销 Ctrl+Z" disabled><i data-lucide="undo-2"></i></button>
+      <button id="redo" class="icon-button" aria-label="重做" title="重做 Ctrl+Shift+Z" disabled><i data-lucide="redo-2"></i></button>
+      <button id="save" class="save-button" aria-label="保存作品"><i data-lucide="circle-check"></i><span id="save-status">本机自动保存</span></button>
+      <button id="export" class="primary-button" disabled><i data-lucide="download"></i><span>导出作品</span></button>
+    </div>
+  </header>
+  <nav class="scene-strip" aria-label="庭院场景">
+    <div class="scene-strip-label"><span>选择一方天地</span><small>每个场景独立保存</small></div>
+    <div id="scene-options" class="scene-options"></div>
+  </nav>
+  <main class="flat-workspace">
+    <section class="flat-garden" aria-label="二维庭院设计画布">
+      <div id="flat-scene"></div>
+      <div class="view-label"><i data-lucide="image"></i><b id="current-scene">日式庭院</b><span>·</span>固定斜视角</div>
+      <div id="selected-tools" class="selected-tools" hidden>
+        <strong id="selected-name"></strong>
+        <div id="selected-colors" class="selected-colors" aria-label="选中植物花色" hidden></div>
+        <label>大小 <input id="scale" aria-label="植物大小" type="range" min="50" max="180" step="5"><output id="scale-value">100%</output></label>
+        <button id="duplicate" class="icon-button" aria-label="复制选中素材" title="复制"><i data-lucide="copy"></i></button>
+        <button id="delete" class="icon-button danger" aria-label="删除选中素材" title="删除"><i data-lucide="trash-2"></i></button>
+      </div>
+      <div class="canvas-instruction"><i data-lucide="mouse-pointer-2"></i><span id="instruction">拖动调整位置 · 点选可改大小与花色</span></div>
+      <div id="loading" class="loading"><i data-lucide="sprout"></i><strong>让花境慢慢生长</strong><p id="loading-text">正在载入庭院与植物素材…</p></div>
+    </section>
+    <aside class="flat-library" aria-label="素材库">
+      <div class="library-heading"><div><span>A LITTLE MORE GREEN</span><h1>为花境添一笔</h1></div><em>12</em></div>
+      <p class="library-tip">选好花色，拖入庭院 · 12 类素材 / 16 个选择</p>
+      <div id="categories" class="asset-categories" aria-label="素材分类"></div>
+      <div id="assets" class="flat-assets"></div>
+      <div class="library-footer"><p><i data-lucide="leaf"></i>已种下 <b id="object-count">0</b> 处小风景</p><span>AI 生成写实素材 · 二维独立存档</span></div>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="drag-ghost" hidden></div>
+  <script type="module" src="/src/flat-main.js"></script>
+</body>
+</html>

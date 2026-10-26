@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#344d40"><title>庭间 · 雨后的小庭院</title></head>
+<body>
+  <header class="header">
+    <a class="brand" href="./" aria-label="庭间首页"><i data-lucide="sprout"></i><span>庭间</span></a>
+    <div class="project-title"><span>雨后的小庭院</span><span class="edition">自由创作</span></div>
+    <div class="header-actions">
+      <a class="study-switch" href="./garden-2d.html">二维对比</a>
+      <a id="study-switch" class="study-switch" href="./?study=realism">写实验证</a>
+      <button id="undo" class="icon-button" title="撤销 Ctrl+Z" aria-label="撤销"><i data-lucide="undo-2"></i></button>
+      <button id="redo" class="icon-button" title="重做 Ctrl+Shift+Z" aria-label="重做"><i data-lucide="redo-2"></i></button>
+      <button id="save" class="save-button"><i data-lucide="circle-check"></i><span id="save-status">已保存到本机</span></button>
+      <button id="export" class="primary-button"><i data-lucide="upload"></i><span>导出作品</span></button>
+    </div>
+  </header>
+  <main class="workspace">
+    <section class="garden" aria-label="庭院设计画布">
+      <div id="scene"></div>
+      <div class="view-bar" aria-label="观察视角">
+        <button data-view="top"><i data-lucide="layout-grid"></i>俯视摆放</button>
+        <button data-view="angle" class="active"><i data-lucide="box"></i>斜视欣赏</button>
+        <button data-view="front"><i data-lucide="mountain"></i>侧面观察</button>
+      </div>
+      <div class="scene-heading"><span class="eyebrow">YOUR LITTLE GARDEN</span><h1>一方小庭，自有天地。</h1><p id="view-hint">换个角度，看看你的植物组合。</p></div>
+      <div class="canvas-tools"><button id="grid" class="icon-button" title="网格辅助" aria-label="网格辅助" aria-pressed="false"><i data-lucide="grid-2x2"></i></button><button id="help" class="icon-button" title="操作说明" aria-label="操作说明"><i data-lucide="circle-help"></i></button></div>
+      <div class="zoom-bar"><button id="zoom-out" aria-label="缩小视图"><i data-lucide="minus"></i></button><button id="fit">适应画布</button><button id="zoom-in" aria-label="放大视图"><i data-lucide="plus"></i></button></div>
+      <div id="selected-tools" class="selected-tools" hidden>
+        <div class="selection-name"><span class="selection-dot"></span><strong id="selected-name"></strong></div>
+        <label>朝向 <input id="rotation" type="range" min="0" max="360" step="5" aria-label="植物朝向"><output id="rotation-value">0°</output></label>
+        <label>大小 <input id="scale" type="range" min="50" max="180" step="5" aria-label="植物大小"><output id="scale-value">100%</output></label>
+        <button id="duplicate" class="icon-button" title="复制" aria-label="复制选中素材"><i data-lucide="copy"></i></button><button id="delete" class="icon-button danger" title="删除" aria-label="删除选中素材"><i data-lucide="trash-2"></i></button>
+      </div>
+      <div class="scene-footer"><span><i data-lucide="mouse-pointer-2"></i><span id="instruction">切换到俯视，即可拖动植物</span></span><span class="live-label"><span></span>实时 3D 庭院</span></div>
+      <div id="loading" class="loading"><i data-lucide="sprout"></i><strong>正在布置小庭院</strong><span id="loading-text">载入植物与景石素材…</span></div>
+    </section>
+    <aside class="library" aria-label="素材库">
+      <div class="library-heading"><div><span class="eyebrow">A LITTLE MORE GREEN</span><h2>为庭院添一抹新意</h2></div><span class="asset-total">08</span></div>
+      <label class="search"><i data-lucide="search"></i><input id="search" placeholder="搜索植物、景石或装饰" aria-label="搜索素材"></label>
+      <nav class="categories" aria-label="素材分类"><button class="active" data-category="全部">全部</button><button data-category="植物">植物</button><button data-category="景石">景石</button><button data-category="装饰">装饰</button></nav>
+      <p class="library-tip">拖入庭院，或点选后放置</p>
+      <div id="assets" class="assets"></div><p id="no-results" hidden>没有找到相关素材，试试其他名称。</p>
+      <div class="library-footer"><div><i data-lucide="leaf"></i><span>已种下 <b id="object-count">0</b> 处小风景</span></div><button id="clear">清空庭院</button><p>8 款立体素材 · 本机自动保存</p></div>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div><div id="drag-ghost" hidden></div>
+  <dialog id="clear-dialog"><h2>重新布置这座庭院？</h2><p>清空所有摆放的素材，地面与庭院结构会保留。清空后也可以撤销。</p><div class="dialog-actions"><button id="cancel-clear">继续创作</button><button id="confirm-clear" class="primary-button">清空庭院</button></div></dialog>
+  <dialog id="help-dialog"><h2>慢慢来，布置你的小庭院。</h2><p>在「俯视摆放」下，从右侧拖入素材，也可以先点素材，再点庭院落下。</p><p>点选植物后直接拖动；下方工具条可调整朝向、大小、复制或删除。斜视与侧视展示同一座庭院。</p><p>Ctrl / ⌘ + Z 撤销；Shift + Ctrl / ⌘ + Z 重做。Esc 取消放置。作品自动保存在当前浏览器。</p><button id="close-help" class="primary-button">开始创作</button></dialog>
+  <script type="module" src="/src/main.js"></script>
+</body></html>
