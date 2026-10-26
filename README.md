@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-打开终端输出的本地网址，默认 http://127.0.0.1:5173/ 。不要直接双击 index.html，需要 HTTP 服务加载模型。
+打开终端输出的本地网址，默认 http://127.0.0.1:5173/ ，自动进入二维花园。二维页顶栏「对比 3D」仍可进入三维近景版；原风格化三维小样可通过 http://127.0.0.1:5173/?view=3d 打开。不要直接双击 index.html，需要 HTTP 服务加载素材。
 
 ```powershell
 npm test
